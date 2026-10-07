@@ -1,0 +1,11 @@
+# Local VS Code settings (all courses)
+.vscode/
+
+# Maven build output and compiled Java files
+target/
+*.class
+
+# Operating system files
+.DS_Store
+Thumbs.db
+Desktop.ini
