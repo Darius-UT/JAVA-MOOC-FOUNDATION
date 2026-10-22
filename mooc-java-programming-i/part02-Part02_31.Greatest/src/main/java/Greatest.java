@@ -2,9 +2,17 @@
 public class Greatest {
 
     public static int greatest(int number1, int number2, int number3) {
-        //write some code here
+        int[] myNumberArray = new int[] {number2, number3};
 
-        return -1;
+        int greatest = number1;
+
+        for (int i : myNumberArray) {
+            if (greatest < i) {
+                greatest = i;
+            }
+        }
+
+        return greatest;
     }
 
     public static void main(String[] args) {
