@@ -20,5 +20,18 @@ public class SumOfAList {
         System.out.println("");
 
         // toteuta listan lukujen summan laskeminen tänne
+
+        if (list.size() == 0) {
+            System.out.println("Cannot calculate sum because the list is empty.");
+            return;
+        }
+
+        int sum = 0;
+        
+        for (int num : list) {
+            sum += num;
+        }
+
+        System.out.println("Sum: " + sum);
     }
 }

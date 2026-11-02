@@ -18,5 +18,8 @@ public class IoobProgram {
             System.out.println(line);
         }
 
+        // set of instructions which leads to indexOutOfBoundsException
+        System.out.println(lines.get(lines.size()));
+
     }
 }

@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class RememberTheseNumbers {
@@ -7,14 +8,20 @@ public class RememberTheseNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        ArrayList<Integer> numbers = new ArrayList<>();
+        List<Integer> myList = new ArrayList<>();
+
         while (true) {
-            int luku = Integer.valueOf(scanner.nextLine());
-            if (luku == -1) {
+            int userNumber = Integer.parseInt(scanner.nextLine());
+
+            if (userNumber == -1) {
                 break;
             }
 
-            numbers.add(luku);
+            myList.add(userNumber);
+        }
+
+        for (int element : myList) {
+            System.out.println(element);
         }
 
     }
